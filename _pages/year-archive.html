@@ -1,19 +1,28 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Blog posts"
+title: "Contact Me"
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<section id="contact-info">
+  <!-- <h2>Contact Me</h2> -->
+  <p>Please feel free to reach out to me through the following channels:</p>
+  
+  <!-- Contact details -->
+  <ul>
+    <li>Phone: <a href="tel:+919404844976">+91 9404844976</a></li>
+    <li>Email: <a href="mailto:23110335@iitgn.ac.in">23110335@iitgn.ac.in</a></li>
+    <li>GitHub: <a href="https://github.com/TejasLohia21" target="_blank">
+      <img src="/assets/images/github-mark.png" alt="GitHub" style="width: 20px; height: 20px;"> TejasLohia21
+    </a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/tejaslohia21/" target="_blank">
+      <img src="/assets/images/linkedin.png" alt="LinkedIn" style="width: 20px; height: 20px;"> tejaslohia21
+    </a></li>
+    <li>Twitter: <a href="https://twitter.com/TejasLohia21" target="_blank">
+      <img src="/assets/images/Logo_of_Twitter.svg.png" alt="Twitter" style="width: 20px; height: 20px;"> @TejasLohia21
+    </a></li>
+  </ul>
+</section>

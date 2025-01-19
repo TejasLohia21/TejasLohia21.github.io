@@ -39,3 +39,65 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Add this to your _sass/_astrophotography.scss or at the end of assets/css/main.scss */
+
+.page__content {
+  .hero-section {
+    /* Override any default page padding */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -2em;  /* Adjust based on your theme's header spacing */
+    
+    /* Ensure proper z-index handling */
+    z-index: 1;
+  }
+}
+
+/* Reset some default theme styles that might interfere */
+.page__hero {
+  &--overlay {
+    .hero-section {
+      padding: 0;
+    }
+  }
+}
+
+/* Ensure proper spacing for the content section */
+#content.content-section {
+  margin-top: 2em;
+  
+  .astro-content {
+    h2 {
+      margin-top: 1em;
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .explore-button {
+    font-size: 1.8rem;
+    padding: 15px 30px;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* Print styles */
+@media print {
+  .hero-section {
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .explore-button {
+    display: none;
+  }
+}

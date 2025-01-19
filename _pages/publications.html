@@ -1,36 +1,132 @@
 ---
 layout: archive
-title: "Publications"
+title: "Projects"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<div class="projects-list">
+    <h1>Projects</h1>
+    <p>Welcome to my project portfolio. Below, you'll find a selection of my work across various domains.</p>
 
-{% include base_path %}
+    <!-- TinyWL Window Manager Project -->
+    <div class="project-item">
+        <h2><strong>TinyWL Window Manager for Linux</strong> <span>(December 2024 - Present)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Balgopal Komarath</p>
+        <p><strong>Description:</strong> Developing a custom window manager, TinyWL, in C, focused on adding advanced features such as dual-window display, stacking, tiling, and window merging (snapping). This project incorporates the implementation of efficient window management techniques, enhances user interaction, and contributes to the Linux Society.</p>
+        <p><strong>Technologies Used:</strong> C, Linux</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/Tiny_WL">The repository will be private until the project completion</a></p>
+        <!-- <p><strong>Live Demo:</strong> <a href="#">Link to demo</a></p> -->
+    </div>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+    <hr>
+
+    <!-- MLP-based Test Generator Project -->
+    <div class="project-item">
+        <h2><strong>MLP-based Test Generator</strong> <span>(Aug 2024 - Nov 2024)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Nipun Batra</p>
+        <p><strong>Description:</strong> Developed and implemented a sophisticated text generation model from the ground up using a Multi-Layer Perceptron (MLP) architecture, leveraging the rich linguistic patterns from Shakespearean text for training. The model was deployed on a dynamic Streamlit app, allowing users to seamlessly customize parameters such as vector length and paragraph length, enabling personalized, high-quality text generation.</p>
+        <p><strong>Technologies Used:</strong> Python, Streamlit, Machine Learning (MLP), Natural Language Processing (NLP)</p>
+        <p><strong>Live Demo:</strong> <a href="https://es335-24-fall-assignment-3-krusty-krabs.streamlit.app">Link to app</a></p>
+    </div>
+
+    <hr>
+
+    <!-- Quantitative Trading Project -->
+    <div class="project-item">
+        <h2><strong>Quantitative Trading</strong> <span>(October 2024 - Present)</span></h2>
+        <p><strong>Description:</strong> Developed cryptocurrency trading strategies focusing on Ethereum and Bitcoin, incorporating technical indicators, machine learning models, and risk management techniques. The model integrates technical indicators, Fibonacci retracements, dynamically changing neural networks based on the Market Regime model using GARCH, clustering, and risk management tools like covariance analysis and Value at Risk (VaR). Currently working on enhancing the model with LSTM networks and advanced quantitative finance theories.</p>
+        <p><strong>Technologies Used:</strong> Python, Machine Learning, GARCH, LSTM, Quantitative Finance, Risk Management</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/Quant_strat">Link to repo</a></p>
+    </div>
+
+    <hr>
+
+    <!-- Flask-based Data Visualization Tool Project -->
+    <div class="project-item">
+        <h2><strong>Flask-based Data Visualization Tool</strong> <span>(Jan'24 - Apr'24)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Mayank Singh</p>
+        <p><strong>Description:</strong> Developed a comprehensive Electoral Bonds Data Analysis platform, converting PDF data into dynamic visualizations. Implemented advanced search, donation insights, and interactive charts (Pie, Bar, Line) using ChartJS. Enhanced data exploration with custom visualizations and exportable plots, providing actionable insights into political donations.</p>
+        <p><strong>Technologies Used:</strong> Python, Flask, ChartJS, Data Analysis</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/23110335_DCC">Link to repo</a></p>
+        <!-- <p><strong>Live Demo:</strong> <a href="#">Link to demo</a></p> -->
+    </div>
+
+    <hr>
+
+    <!-- Laser-Based Wireless Communication Project -->
+    <div class="project-item">
+    <h2><strong>Laser-Based Wireless Communication</strong> <span>(Date: Jan'24 - Apr'24)</span></h2>
+    <p><strong>Advisor:</strong> Prof. Arup Chakraborty</p>
+    <p><strong>Description:</strong> Developed a simulation model for optical wireless communication using laser technology in Wi-Fi networks, focusing on varying frequency and phase differences to transmit data. The project explored data encoding, transmission, and reception processes using high-low signal pairs to encode alphanumeric data. Addressed challenges such as signal transition delays, external light interference, and synchronization issues.</p>
+    <p><strong>Technologies Used:</strong> Laser Technology, Signal Processing, Data Encoding, Optical Wireless Communication</p>
+    <p><strong>Code and Documentation:</strong> For detailed analysis, technical documentation, and the <strong>code</strong>, please refer to the linked paper: <a href="https://iitgnacin-my.sharepoint.com/:b:/g/personal/23110334_iitgn_ac_in/ERaP6oIndxJFivPPv5zZU1oB4PGTzJmV_qZ0f7bsHcz34Q?e=xuISmt">Laser-Based Wireless Communication Paper</a></p>
+    <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/electrical_es116_335">Link to repo</a></p>
+
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+      <h2><strong>Human Activity Recognition (HAR)</strong> <span>(Date: Aug 2024 - Nov 2024)</span></h2>
+      <p><strong>Advisor:</strong> Prof. Nipun Batra</p>
+      <p><strong>Description:</strong> Developed a model for recognizing human activities using accelerometer data from the UCI-HAR dataset. The project included tasks such as data preprocessing, feature extraction, and visualization of activity classes using Principal Component Analysis (PCA). The model also involved training decision trees on raw accelerometer data and extracted features to classify static and dynamic activities. Conducted performance evaluations using accuracy, precision, and recall metrics.</p>
+      <p><strong>Technologies Used:</strong> Python, Scikit-learn, PCA, TSFEL, Data Preprocessing, Feature Engineering</p>
+      <!-- <p><strong>Challenges Faced:</strong>
+          <ul>
+              <li>Data preprocessing and feature extraction for high-dimensional accelerometer data.</li>
+              <li>Determining the optimal features for classification using PCA and TSFEL.</li>
+              <li>Handling imbalanced classes and improving model accuracy for less-represented activities.</li>
+          </ul>
+      </p>
+      <p><strong>Future Prospects:</strong>
+          <ul>
+              <li>Improvement of model performance by exploring advanced machine learning algorithms such as Random Forest and SVM.</li>
+              <li>Integration of real-time data for dynamic activity recognition in smartphone applications.</li>
+              <li>Exploration of deep learning models for more accurate predictions in complex datasets.</li>
+          </ul>
+      </p> -->
+      <p><strong>Code and Documentation:</strong> For detailed analysis, technical documentation, and the <strong>code</strong>, please refer to the linked repository: <a href="https://github.com/devansh-lodha/es335-24-fall-assignment-1">HAR Project Repository</a></p>
+  </div>
+  
+  <hr>
 
 
 
+    <!-- Add more project items as needed -->
+</div>
+
+<style>
+    .projects-list {
+        padding: 2rem;
+        background-color: #f9f9f9;
+    }
+
+    .project-item {
+        margin-bottom: 2rem;
+    }
+
+    .project-item h2 {
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    .project-item span {
+        font-size: 1rem;
+        color: #777;
+    }
+
+    .project-item p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    .project-item a {
+        color: #007acc;
+        text-decoration: none;
+    }
+
+    .project-item a:hover {
+        text-decoration: underline;
+    }
+</style>

@@ -1,293 +1,406 @@
 ---
-permalink: /markdown/
-title: "Markdown"
-author_profile: true
-redirect_from: 
+permalink: /astrophotography/
+title: "Astrophotography"
+author_profile: false
+layout: single
+classes: wide
+redirect_from:
   - /md/
   - /markdown.html
 ---
 
-## Locations of key files/directories
-
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
-  * _publications/
-  * _portfolio/
-  * _posts/
-  * _teaching/
-  * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
-
-## Tips and hints
-
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
-  * Green check: successful build
-  * Orange circle: building
-  * Red X: error
-  * No icon: not built
-* Academic Pages uses [Jekyll Kramdown](https://jekyllrb.com/docs/configuration/markdown/), GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences. 
-  * Some of emoji supported on GitHub should be supposed via the [Jemoji](https://github.com/jekyll/jemoji) plugin :computer:.
-  * The best list of the supported emoji can be found in the [Emojis for Jekyll via Jemoji](https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer) blog post.
-
-## Resources
- * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
- * [MathJax Documentation](https://docs.mathjax.org/en/latest/)
-
-## MathJax 
-
-Support for MathJax Version 3.0 is included in the template:
-
-$$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
+<style>
+/* Masthead (navigation bar) modifications */
+.masthead {
+    background-color: #000000 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
-$$
 
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
-
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
-
-## Markdown guide
-
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
-
-### Header three
-
-#### Header four
-
-##### Header five
-
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
-
-### Table 1
-
-| Entry            | Item   |                                                              |
-| --------         | ------ | ------------------------------------------------------------ |
-| [John Doe](#)    | 2016   | Description of the item in the list                          |
-| [Jane Doe](#)    | 2019   | Description of the item in the list                          |
-| [Doe Doe](#)     | 2022   | Description of the item in the list                          |
-
-### Table 2
-
-| Header1 | Header2 | Header3 |
-|:--------|:-------:|--------:|
-| cell1   | cell2   | cell3   |
-| cell4   | ce
-ll5   | cell6   |
-|-----------------------------|
-| cell1   | cell2   | cell3   |
-| cell4   | cell5   | cell6   |
-|=============================|
-| Foot1   | Foot2   | Foot3   |
-
-## Definition Lists
-
-Definition List Title
-:   Definition list division.
-
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
-
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
-
-Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
-
-## Unordered Lists (Nested)
-
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
-
-## Ordered List (Nested)
-
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
-
-## Buttons
-
-Make any link standout more when applying the `.btn` class.
-
-## Notices
-
-Basic notices or call-outs are supported using the following syntax:
-
-```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-```
-
-which wil render as:
-
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
-{: .notice}
-
-### Footnotes
-
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
-
-```markdown
-This is the regular text.[^1] This is more regular text.[^note]
-
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
-```
-
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
-
-## HTML Tags
-
-### Address Tag
-
-<address>
-  1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
-</address>
-
-### Anchor Tag (aka. Link)
-
-This is an example of a [link](http://github.com "Github").
-
-### Abbreviation Tag
-
-The abbreviation CSS stands for "Cascading Style Sheets".
-
-*[CSS]: Cascading Style Sheets
-
-### Cite Tag
-
-"Code is poetry." ---<cite>Automattic</cite>
-
-### Code Tag
-
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
-
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
-
-```python
-print('Hello World!')
-```
-
-or R:
-
-```R
-print("Hello World!", quote = FALSE)
-```
-
-### Details Tag (collapsible sections)
-
-The HTML `<details>` tag works well with Markdown and allows you to include collapsible sections, see [W3Schools](https://www.w3schools.com/tags/tag_details.asp) for more information on how to use the tag.
-
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-
-The source code:
-
-```HTML
-<details>
-  <summary>Collapsed by default</summary>
-  This section was collapsed by default!
-</details>
-```
-
-Or, you can leave a section open by default by including the `open` attribute in the tag:
-
-<details open>
-  <summary>Open by default</summary>
-  This section is open by default thanks to open in the &lt;details open&gt; tag!
-</details>
-
-
-### Emphasize Tag
-
-The emphasize tag should _italicize_ text.
-
-### Insert Tag
-
-This tag should denote <ins>inserted</ins> text.
-
-### Keyboard Tag
-
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
-
-### Preformatted Tag
-
-This tag styles large blocks of code.
-
-<pre>
-.post-title {
-  margin: 0 0 5px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.2;
-  and here's a line of some really, really, really, really long text, just to see how the PRE tag handles it and to find out how it overflows;
+.masthead__inner-wrap {
+    background-color: #000000 !important;
 }
-</pre>
 
-### Quote Tag
+.greedy-nav {
+    background-color: #000000 !important;
+}
 
-<q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
+.greedy-nav a {
+    color: #ffffff !important;
+}
 
-### Strike Tag
+.greedy-nav .visible-links a:before {
+    background: #ffffff !important;
+}
 
-This tag will let you <strike>strikeout text</strike>.
+.greedy-nav .visible-links a:hover {
+    color: #cccccc !important;
+}
+</style>
 
-### Strong Tag
+<style>
+/* Reset layout styles */
+.page__content {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+    float: none !important;
+    width: 100vw !important;
+    margin-left: calc(-50vw + 50%) !important;
+    margin-right: calc(-50vw + 50%) !important;
+    background-color: #000000;
+}
 
-This tag shows **bold text**.
+.page__inner-wrap {
+    max-width: none !important;
+    padding: 0 !important;
+}
 
-### Subscript Tag
+.page__title {
+    display: none;
+}
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+/* Hide breadcrumbs and other navigation */
+.breadcrumbs {
+    display: none !important;
+}
 
-### Superscript Tag
+/* Full screen hero section */
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url('/assets/images/astrophotography-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+.explore-button {
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
 
-### Variable Tag
+.explore-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
 
-This allows you to denote <var>variables</var>.
+.content-section {
+    opacity: 0;
+    transition: opacity 1s ease;
+    background-color: #000000;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+}
 
-***
-**Footnotes**
+.content-section.visible {
+    opacity: 1;
+}
 
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
+.astro-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #ffffff;
+}
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures two items per row */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background-color: #000000;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.gallery-item img {
+    width: 100%; /* Adjusted to take full space */
+    max-width: 500px; /* Optional: Set a maximum width */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+.gallery-item-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-caption {
+    transform: translateY(0);
+}
+
+/* Hide unnecessary elements */
+.page__meta {
+    display: none;
+}
+
+.page__footer {
+    margin-top: 0;
+}
+</style>
+
+<div class="hero-section">
+    <a href="#content" class="explore-button">Explore</a>
+</div>
+
+<div id="content" class="content-section">
+    <div class="astro-content">
+        <h2>Astrophotography</h2>
+        <p>Explore my finest astrophotography works..</p>
+        <p> - Following are shot from the Unistellar's Evscope 2 of the Astronomy club at IIT Gandhinagar.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="/assets/images/Andromeda.png" alt="Andromeda Galaxy">
+                <div class="gallery-item-caption">
+                    <h3>Andromeda Galaxy</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <!-- Second Image -->
+            <div class="gallery-item">
+                <img src="/assets/images/Triffid.jpeg" alt="Triffid Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Triffid Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <!-- Third Image -->
+            <div class="gallery-item">
+                <img src="/assets/images/Lagoon.jpeg" alt="Lagoon Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Lagoon Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Pinwheel.png" alt="Pinwheel Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Pinwheel Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/NGC5128.png" alt="NGC Nebula">
+                <div class="gallery-item-caption">
+                    <h3>NGC 5128 Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Whirlpool.png" alt="Whirlpool Galaxy">
+                <div class="gallery-item-caption">
+                    <h3>Whirlpool Galaxy</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Smoke Ring.png" alt="Smoke Ring">
+                <div class="gallery-item-caption">
+                    <h3>Smoke Ring</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Running_man.png" alt="Running Man Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Running Man Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Orion.jpeg" alt="Orion Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Orion Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            
+            <div class="gallery-item">
+                <img src="/assets/images/Eagle's Nebula.jpeg" alt="Eagle Galaxy">
+                <div class="gallery-item-caption">
+                    <h3>Eagle's Nebula / Pillars of Creation</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Flame Nebula.jpeg" alt="Flame Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Flame Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Triangulum.jpeg" alt="Triangulum Galaxy">
+                <div class="gallery-item-caption">
+                    <h3>Triangulum Galaxy</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Horse Nebula.jpeg" alt="Horse Head Nebula">
+                <div class="gallery-item-caption">
+                    <h3>Horse head Nebula</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="/assets/images/Mars.jpeg" alt="Mars">
+                <div class="gallery-item-caption">
+                    <h3>Mars</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Saturn.jpeg" alt="Saturn">
+                <div class="gallery-item-caption">
+                    <h3>Saturn</h3>
+                    <p>Captured with Unistellar's Evscope 2</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Jupiter.jpeg" alt="Jupiter">
+                <div class="gallery-item-caption">
+                    <h3>Jupiter</h3>
+                    <p>Captured with OnePlus 11R using Celestron SkyMaster</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/final.jpeg" alt="Star Trail_1">
+                <div class="gallery-item-caption">
+                    <h3>Star Trails</h3>
+                    <p>Captured with Nikon_Z50</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/final2.jpeg" alt="Star Trail_1">
+                <div class="gallery-item-caption">
+                    <h3>Star Trails</h3>
+                    <p>Captured with Nikon_Z50</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/final3.jpg" alt="Star Trail_1">
+                <div class="gallery-item-caption">
+                    <h3>Star Trails</h3>
+                    <p>Captured with Nikon_Z50</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Milky_Way.jpeg" alt="Milky Way">
+                <div class="gallery-item-caption">
+                    <h3>Milky Way</h3>
+                    <p>Captured with OnePlus 11R</p>
+                </div>
+            </div>
+
+            
+
+
+            
+
+            <div class="gallery-item">
+                <img src="/assets/images/Wideangle.jpeg" alt="Rand">
+                <div class="gallery-item-caption">
+                    <h3>Wide Angle Shot</h3>
+                    <p>Captured with OnePlus 11R</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/Random.jpeg" alt="Orion Nebula-B">
+                <div class="gallery-item-caption">
+                    <h3>Wide Angle Capture</h3>
+                    <p>Captured with OnePlus 11R</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="/assets/images/OrionB.jpeg" alt="Orion Nebula-B">
+                <div class="gallery-item-caption">
+                    <h3>Orion Nebula</h3>
+                    <p>Captured with OnePlus 11R using Celestron SkyMaster</p>
+                </div>
+            </div>
+
+           
+
+            <div class="gallery-item">
+                <img src="/assets/images/Moon.jpeg" alt="Moon">
+                <div class="gallery-item-caption">
+                    <h3>Moon</h3>
+                    <p>Captured with OnePlus 11R using Celestron SkyMaster</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+document.querySelector('.explore-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector('#content').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+observer.observe(document.querySelector('.content-section'));
+</script>
