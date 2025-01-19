@@ -1,5 +1,5 @@
 ---
-permalink: /astrophotography/
+permalink: /markdown/
 title: "Astrophotography"
 author_profile: false
 layout: single
