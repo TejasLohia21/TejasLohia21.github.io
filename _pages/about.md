@@ -72,7 +72,7 @@ After the first year I received branch change to Computer Science and Engineerin
 
 
 
-What is my passion?
+What are my interests?
 ------
 **Astrophotography**: Something, which keeps me awake at night, while making me lost in the darkness of the universe. I have been an amateur astrophotographer for the past 4 years, and have been exploring the dark skies with my camera. Started this journey in collaboration with Jyotirvidya Parisanstha, Pune.
 
@@ -82,4 +82,4 @@ Not only the capturing, but also the image processing techniques have been a par
 
 **Reading:** I have been an avid reader of books, which present me the history and evolution of science, as they not only provide me the knowledge, but also the inspiration, and the thinking process of the scientists. One of the favorites being, "Through two doors at once" by Anil Ananthaswamy.
 
-**Exploring Corals:** Having dived twice into the very beautiful corals of Andaman, but with a gap of 10 years, made me introspect of how we have damaged this hidden beauty beneath the oceans. This made me curious to explore the world of corals, and am willing to contribute to the conservation of the same.
+**Finance and Economics:** It really fascinates of how people came up with ideas to predict the market, as well as other economical aspects. I have been exploring the field of Quantitative Finance, and have been learning the concepts of trading, and the financial markets.
