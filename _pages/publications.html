@@ -9,14 +9,86 @@ author_profile: true
     <h1>Projects</h1>
     <p>Welcome to my project portfolio. Below, you'll find a selection of my work across various domains.</p>
 
+    <div class="project-item">
+        <h2><strong>Multi-Target, Multi-Camera Tracking — Summer Research Internship, IIT Bombay</strong> <span>(May 2025 – July 2025)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Ganesh Ramakrishnan</p>
+        <p><strong>Description:</strong> Developed a 3D object detection and multi-target tracking system for multi-camera setups with depth sensors on AICITY 2025 synthetic datasets, addressing challenges like occlusion and variable lighting.</p>
+        <p><strong>Results:</strong> Enhanced cross-camera identity matching using geometric constraints, 3D pose estimation, and spatio-temporal modeling. Work is progressing toward a research publication.</p>
+        <p><strong>Technologies Used:</strong> Python, PyTorch, OpenCV, NumPy, 3D Vision, Multi-view Geometry</p>
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+        <h2><strong>Animal Pose Transfer and Regeneration</strong> <span>(August 2025 – Present)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Shanmuganathan Raman</p>
+        <p><strong>Description:</strong> Developing a diffusion-based pipeline to generate 3D quadruped avatars from monocular images and enable pose transfer between different animal species while preserving texture and background realism.</p>
+        <p><strong>Technologies Used:</strong> Python, PyTorch, Diffusion Models, 3D Reconstruction, Computer Vision</p>
+    </div>
+
+    <hr>
+
     <!-- TinyWL Window Manager Project -->
     <div class="project-item">
         <h2><strong>TinyWL Window Manager for Linux</strong> <span>(December 2024 - Present)</span></h2>
         <p><strong>Advisor:</strong> Prof. Balgopal Komarath</p>
         <p><strong>Description:</strong> Developing a custom window manager, TinyWL, in C, focused on adding advanced features such as dual-window display, stacking, tiling, and window merging (snapping). This project incorporates the implementation of efficient window management techniques, enhances user interaction, and contributes to the Linux Society.</p>
         <p><strong>Technologies Used:</strong> C, Linux</p>
-        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/Tiny_WL">The repository will be private until the project completion</a></p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/Tiny_WL">Project Link</a></p>
         <!-- <p><strong>Live Demo:</strong> <a href="#">Link to demo</a></p> -->
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+        <h2><strong>Exploration Beyond Vanilla HNSW: Learning Graph Structure for Smarter ANN Search</strong> <span>(February 2025 – April 2025)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Anirban Dasgupta</p>
+        <p><strong>Description:</strong> Improved the HNSW algorithm through frequency-based layer assignment, clustering-driven connections, and SCC-aware pruning to enhance Approximate Nearest Neighbor (ANN) search performance.</p>
+        <p><strong>Results:</strong> Delivered higher recall and faster query times than standard HNSW on large-scale datasets.</p>
+        <p><strong>Technologies Used:</strong> Python, NumPy, scikit-learn, Faiss, NetworkX</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/datascience-HNSW">Project Link</a></p>
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+    <h2><strong>Multi-Modal Fake Review Detection Engine (HackOn with Amazon)</strong> <span>(April 2025)</span></h2>
+        <p><strong>Team:</strong> AWSome Hack, IIT Gandhinagar</p>
+        <p><strong>Description:</strong> Built a multi-modal fake review detection system integrating product data, user reviews, and metadata. Used CLIP-based cross-modal validation and various data encoders for training to identify deceptive patterns.</p>
+        <!-- <p><strong>Results:</strong> Achieved 82% accuracy using sentiment analysis (VADER, TextBlob), neural attention for aspect extraction, and MLP-based fusion of temporal and behavioral features.</p> -->
+        <p><strong>Technologies Used:</strong> Python, PyTorch, CLIP, NLP, Sentiment Analysis, MLPs</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/amazon_hackon/">Project Link</a></p>
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+    <h2><strong>Re-Identification Model using Body Shape and Depth Data</strong> <span>(July 2025 – Present)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Ganesh Ramakrishnan</p>
+        <p><strong>Description:</strong> Building a re-identification model based on CLIP-ReID that leverages human appearance and depth information to capture 3D body geometry for improved identification accuracy.</p>
+        <!-- <p><strong>Focus:</strong> Addressing high-occlusion scenarios by integrating contextual cues from surrounding frames and selectively using sensor inputs for robust 3D feature extraction.</p> -->
+        <p><strong>Technologies Used:</strong> Python, PyTorch, CLIP, Depth Estimation, Computer Vision</p>
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+        <h2><strong>Inter IIT Tech Meet 13.0 — Zelta Automations Algorithmic Trading</strong> <span>(December 2024)</span></h2>
+        <p><strong>Team:</strong> IIT Gandhinagar Contingent</p>
+        <p><strong>Description:</strong> Designed and developed algorithmic trading strategies for BTC and ETH pairs as part of the Inter IIT Tech Meet 13.0 challenge. Implemented dynamic risk management frameworks to optimize trade execution. Performed extensive multi-year backtesting and validation to ensure robustness across volatile market conditions, achieving a Sharpe ratio of 2.83 on ETH and 1.96 on BTC.</p>
+        <p><strong>Technologies Used:</strong> Python, Pandas, NumPy, Backtesting.py, Technical Analysis Indicators, Machine Learning</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/TejasLohia21/IIT-Gandhinagar_INTERIIT13.0_Quant">Project Link</a></p>
+    </div>
+
+    <hr>
+
+    <div class="project-item">
+        <h2><strong>ES204 Final Project — Digital Systems (Open-Source Project)</strong> <span>(March 2025 – April 2025)</span></h2>
+        <p><strong>Advisor:</strong> Prof. Joycee Mekie</p>
+        <p><strong>Description:</strong> Designed a 3×3 systolic-array accelerator in Verilog with pipelined multiply-accumulate operations for efficient matrix multiplication using streaming dataflow.</p>
+        <p><strong>Implementation:</strong> Integrated UART RX/TX for FPGA–host communication on Basys3 and developed a Python utility for transmitting 8-bit matrices and receiving computed results over serial.</p>
+        <p><strong>Technologies Used:</strong> Verilog, Python, FPGA (Basys3), UART Communication</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/mohit-yadav-21/ES204_Final_Project/tree/main">Project Link</a></p>
     </div>
 
     <hr>
